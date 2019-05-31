@@ -4,7 +4,6 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-import org.junit.AfterClass;
 import org.junit.Assert;
 import pages.CurrencyConverterPage;
 
@@ -38,15 +37,6 @@ public class CurrencyConverterStepDefs {
     @When("^user submits the selected currencies for conversion$")
     public void user_submits_the_selected_currencies_for_conversion() {
         currencyConverterPage.clickCurrecyConvert();
-    }
-
-    @Then("^user is displayed with the currency conversion rate on the proceeding page$")
-    public void user_is_displayed_with_the_currency_conversion_rate_on_the_proceeding_page() {
-        currencyConverterPage.screenshot();
-        Assert.assertFalse(currencyConverterPage.conversionAmount().equals(null));
-        Assert.assertFalse(currencyConverterPage.conversionRate().equals(null));
-        Assert.assertFalse(currencyConverterPage.conversionHeading().equals(null));
-        currencyConverterPage.close();
     }
 
     @When("^user selects the From currency as GBP$")
@@ -83,6 +73,15 @@ public class CurrencyConverterStepDefs {
     public void user_selects_the_From_currency_as_EUR() {
         currencyConverterPage.expandFromCurrencyDropdown();
         currencyConverterPage.selectFromCurrencyEUR();
+    }
+
+    @Then("^user is displayed with the currency conversion rate on the proceeding page$")
+    public void user_is_displayed_with_the_currency_conversion_rate_on_the_proceeding_page() {
+        currencyConverterPage.screenshot();
+        Assert.assertFalse(currencyConverterPage.conversionAmount().equals(null));
+        Assert.assertFalse(currencyConverterPage.conversionRate().equals(null));
+        Assert.assertFalse(currencyConverterPage.conversionHeading().equals(null));
+        currencyConverterPage.close();
     }
 
 }

@@ -32,8 +32,7 @@ public class Page {
                 this.driver = new ChromeDriver();
                 break;
             case "firefox":
-                /*DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-                capabilities.setCapability("marionette", true);*/
+                //TO_DO: Could not find latest geckodriver. Hence tests on firefox are not running. With latest geckodriver tests should work without making any change.
                 geckoDriverExePath = "src//main//resources//geckodriver";
                 System.setProperty("webdriver.gecko.driver", geckoDriverExePath);
                 this.driver = new FirefoxDriver();
