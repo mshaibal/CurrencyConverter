@@ -16,6 +16,15 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Page.java - superclass for all other pages. This class is mainly created to initialize Elements.
+ * Also, to pass desired browser for the test
+ * PageFactory is used to Initialize Elements of a Page class without having to use ‘FindElement‘ or ‘FindElements‘
+ * This class is malinly created
+ * @author  Shaibal Mukherjee
+ * @version 1.0
+ */
+
 public class Page {
 
     private WebDriver driver;

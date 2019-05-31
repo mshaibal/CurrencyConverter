@@ -1,9 +1,15 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
+
+/**
+ * CurrencyConverterPage.java - a simple class representing the page object model. This class extends Page object
+ * @FindBy annotation helps to find elements in the page using By strategy
+ * @author  Shaibal Mukherjee
+ * @version 1.0
+ * @see super class Page
+ */
 
 public class CurrencyConverterPage extends Page{
 
