@@ -77,7 +77,7 @@ Do git clone https://github.com/mshaibal/CurrencyConverter.git
 Build the project in intellij
 Set maven path to download the dependencies. File->Other Setting->Default Settings->Maven-> User Setting File
 Set sdk as well to 1.8 File->Project Structure->Project->ProjectSDK
-Go to Run->Edit Configuration->Click '+'->Junit->Set Name to your choice->VM options as -ea -DBrowser=chrome->JRE should be Default 1.8 SDK
+Go to Run->Edit Configuration->Click '+'->Junit->Set Name to your choice->Select class as RunCukes.java->VM options as -ea -DBrowser=chrome->JRE should be Default 1.8 SDK
 Apply the changes and Run the test.
 
 #Issues:
